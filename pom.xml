@@ -1,0 +1,31 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.example</groupId>
+  <artifactId>my-tetris</artifactId>
+  <packaging>war</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>my-tetris Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+<distributionManagement>
+ <repository>
+      <id>nexus</id>
+      <url>http://3.133.93.223:8081/repository/tetris_releases/</url>
+    </repository>
+    <snapshotRepository>
+      <id>nexus</id>
+      <url>http://3.133.93.223:8081/repository/tetris_Snapshots/</url>
+    </snapshotRepository>
+   </distributionManagement>
+  <build>
+    <finalName>my-tetris</finalName>
+  </build>
+</project>
